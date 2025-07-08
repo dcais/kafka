@@ -1654,6 +1654,7 @@ public class RemoteLogManager implements Closeable {
 
             remainingBytes -= firstBatchSize;
 
+
             if (remainingBytes > 0) {
                 // read the input stream until min of (EOF stream or buffer's remaining capacity).
                 Utils.readFully(remoteSegInputStream, buffer);
